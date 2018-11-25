@@ -6,17 +6,17 @@ When preparing OI datas, you may have a generator to make **input datas** and a 
 
 By modifying the file name in your standard program? too compicated! Use our tool to make things simple!
 
-##How to get the release version?
+## How to get the release version?
 
 You can download the release version by [clicking here]().
 
-##System requirements
+## System requirements
 
 Because of the use of function "getch()", the current version of data converter can only support Microsoft Windows.
 
 Fell free to post pull request to share your solutions.
 
-##About coding
+## About coding
 
 This source code is originaly written by DEV-CPP at the year of 2016, which is a time when I only have little experience in making large programs(Not saying that I have experience now).
 
@@ -24,7 +24,7 @@ In that situation, the code is unprofessional and doesn't match the standard of 
 
 If you have any great ideas about how to improve this progrm, fell free to post "Issues" and "Pull requests" to make your contribution.
 
-##About Author
+## About Author
 
 The auther is currently a college student of ShanDong University(By the year of 2021). The author doesn't have much time to update this project and deal with pull requests frequently.
 
@@ -36,7 +36,7 @@ My QQ is: 1043448789
 
 Fell free to talk about anything.
 
-##License
+## License
 
 This is a free software under the license of GPL.
 
