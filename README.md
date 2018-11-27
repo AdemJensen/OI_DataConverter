@@ -22,11 +22,11 @@ This source code is originaly written by DEV-CPP at the year of 2016, which is a
 
 **Notice: Because of the DEV-CPP, the source code is encoded by UTF-8, which is not a standard way of encoding a program. This issue will be resolved afterwards.**
 
-**Tips: In some of the files, you may see "Version S2", even in the release panel. This is because before the first commit on Git, there are several versions before(0.9, 1.0, 2.0, 3.0, 4.0, 5.0, S1), this version appeared to be the last version since 2016, so I only added this version and commited it as the first version on GitHub. This is mainly because I just learnt how to use Git and GitHub yesterday(today is 2018-11-26). You can also treat this as my first attempment of the use of Git and GitHub. If there is anything unprofessional, please note them on "Issues" or E-Mail me.**
+**Tips: In some of the files, you may see "Version S2", even in the release panel. This is because before the first commit on Git, there are several versions (0.9, 1.0, 2.0, 3.0, 4.0, 5.0, S1), this version appeared to be the last version since 2016, so I only added this version and commited it as the first version on GitHub. This is mainly because I just learnt how to use Git and GitHub yesterday(today is 2018-11-26). You can also treat this as my first attempment of the use of Git and GitHub. If there is anything unprofessional, please note them on "Issues" or E-Mail me.**
 
-In that situation, the code is unprofessional and doesn't match the standard of large programs. But I decided to post them on GitHub anyway in the thoughts of studying and sharing. Because although there are shortcommings, but the system is really interesting, especially the automatic matching system and analyse systems.
+In that situation, the code is unprofessional and doesn't match the standard of large programs. But I decided to post them on GitHub anyway in the thoughts of studying and sharing. Because although there are shortcommings, the system is really interesting, especially the automatic matching system and analyse systems.
 
-If you have any great ideas about how to improve this progrm, fell free to post "Issues" and "Pull requests" to make your contribution.
+If you have any great ideas about how to improve this program, fell free to post "Issues" and "Pull requests" to make your contribution.
 
 ## About Author
 
