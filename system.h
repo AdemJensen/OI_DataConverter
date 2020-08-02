@@ -1,19 +1,3 @@
-// Copyright (C) 2018 AdemJensen
-// This library is free software; you can redistribute it and/or 
-// modify it under the terms of the GNU General Public License as 
-// published by the Free Software Foundation; either version 3, 
-// or (at your option) any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
 enum Color{red,blue,green,white,black,yellow};
 void pause()
 {
@@ -23,7 +7,7 @@ void clearall()
 {
 	system("cls");
 	
-	cout<<"数据转换器 S2"<<endl;
+	cout<<"数据转换器 S3"<<endl;
 	cout<<"________________________________________________________________________________\n";
 }
 void cline()
@@ -215,7 +199,7 @@ string exract(string s,int l,int r)
 	}
 	return ans;
 }
-int stoi(string s)
+int s2i(string s)
 {
 	if(s.size()==0) return 0;
 	char str[1005];

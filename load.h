@@ -1,19 +1,3 @@
-// Copyright (C) 2018 AdemJensen
-// This library is free software; you can redistribute it and/or 
-// modify it under the terms of the GNU General Public License as 
-// published by the Free Software Foundation; either version 3, 
-// or (at your option) any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
 bool Manual_load(bool show)
 {
 	if(show) clearall();
@@ -102,7 +86,7 @@ bool File_load(bool pau,bool show)
 			if(checknum(setto,show))
 			{
 				if(show) if(fromset) _warn("[警告]文件开始编号被覆盖设置为\""),_warn(setto),_warn("\"!\n");
-				from=stoi(setto);
+				from=s2i(setto);
 				fromset=true;
 			}
 			else ok=false;
@@ -112,7 +96,7 @@ bool File_load(bool pau,bool show)
 			if(checknum(setto,show))
 			{
 				if(show) if(toset) _warn("[警告]文件结束编号被覆盖设置为\""),_warn(setto),_warn("\"!\n");
-				to=stoi(setto);
+				to=s2i(setto);
 				toset=true;
 			}
 			else ok=false;
@@ -222,7 +206,7 @@ bool Auto_load(bool show)
 					dpos=i;
 					while(isdigit(curline[i])) i++;
 					string dig=exract(curline,dpos,i-1);
-					int extracted=stoi(dig);
+					int extracted=s2i(dig);
 					leastinserial=min((int)dig.size(),leastinserial);
 					from=min(from,extracted);
 					to=max(to,extracted);

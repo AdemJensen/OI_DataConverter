@@ -1,31 +1,15 @@
-// Copyright (C) 2018 AdemJensen
-// This library is free software; you can redistribute it and/or 
-// modify it under the terms of the GNU General Public License as 
-// published by the Free Software Foundation; either version 3, 
-// or (at your option) any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
 void changesettings()
 {
 	while(true)
 	{
 		clearall();
-		string cbef="[?却??应]?选?????牡??\n________________________________________\n";
-		string sel1="????:"+exename;
-		string sel2="?????始??:"+itos(from);
-		string sel3="????????:"+itos(to);
-		string sel4="?????:"+inname;
-		string sel5="??????:"+outname;
-		int select=arrowselect(cbef,"________________________________________",6,1,sel1.c_str(),2,sel2.c_str(),2,sel3.c_str(),2,sel4.c_str(),3,sel5.c_str(),4,"[??????");
+		string cbef="[等待响应]请选择您想修改的项:\n________________________________________\n";
+		string sel1="程序名:"+exename;
+		string sel2="文件开始编号:"+itos(from);
+		string sel3="文件结束编号:"+itos(to);
+		string sel4="输入文件:"+inname;
+		string sel5="输出文件:"+outname;
+		int select=arrowselect(cbef,"________________________________________",6,1,sel1.c_str(),2,sel2.c_str(),2,sel3.c_str(),2,sel4.c_str(),3,sel5.c_str(),4,"[退出修改]");
 		announcedata();
 		if(select==1)
 		{
@@ -47,7 +31,7 @@ void changesettings()
 					while(!curok) curok=loadto(temp);
 					if(from>to)
 					{
-						_err("[?????始????诮????!\n");
+						_err("[错误]开始编号大于结束编号!\n");
 						toset=false;
 						fromset=false;
 						continue;

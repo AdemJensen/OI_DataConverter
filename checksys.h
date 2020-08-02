@@ -1,19 +1,3 @@
-// Copyright (C) 2018 AdemJensen
-// This library is free software; you can redistribute it and/or 
-// modify it under the terms of the GNU General Public License as 
-// published by the Free Software Foundation; either version 3, 
-// or (at your option) any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
 bool checkexename(string s,bool show)
 {
 	if(show) cout<<"[信息]正在检查exe合法性...";
@@ -36,25 +20,7 @@ bool checkexename(string s,bool show)
 		if(show) _err("[错误]不能指定转换器为目标exe程序!\n");
 		return false;
 	} 
-	string opera=s+" -anti-reopen-mode";
-	cline();_warn("[注意]检查exe需要运行您的exe，如有崩溃，属于正常现象。\n");
 	
-	WinExec(opera.c_str(),SW_SHOW);
-	
-	Sleep(500);
-	opera="taskkill /IM "+s;
-	opera+=" /f";
-	system(opera.c_str());
-	clearall();
-	
-	if(!exist("std.out"))
-	{
-		cline();
-		if(show) _err("[错误]指定的exe程序未正确设置文件操作!\n");
-		return false;
-	}
-	remove("std.out");
-	//remove("std.in");
 	cline();
 	return true;
 }
@@ -121,7 +87,7 @@ string getfilename(string s,int now)
 			while(isdigit(s[i])&&i<len-1) i++;
 			if(s[i]=='d')
 			{
-				int snum=stoi(exract(s,pos+1,i-1));
+				int snum=s2i(exract(s,pos+1,i-1));
 				string targetnum=itos(now);
 				int divis=snum-targetnum.size();
 				for(int i=1;i<=divis;i++) ans+='0';
@@ -157,7 +123,7 @@ bool checknum(string s,bool show)
 		if(show) _err("[错误]数字中包含非法字符!\n");
 		return false;
 	}
-	if(stoi(s)<0)
+	if(s2i(s)<0)
 	{
 		if(show) _err("[错误]数字无效!\n");
 		return false;
